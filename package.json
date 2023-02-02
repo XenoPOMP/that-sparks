@@ -1,0 +1,21 @@
+{
+  "name": "that-sparks",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "index.ts",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "classnames": "^2.3.2",
+    "framer-motion": "^9.0.1",
+    "node-sass": "^8.0.0",
+    "random-js": "^2.1.0",
+    "react": "^18.2.0",
+    "sass-loader": "^13.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.18",
+    "@types/react": "^18.0.27",
+    "prettier": "^2.8.3"
+  }
+}
