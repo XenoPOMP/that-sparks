@@ -1,6 +1,6 @@
 {
   "name": "that-sparks",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "type": "module",
   "main": "index.ts",
   "license": "MIT",

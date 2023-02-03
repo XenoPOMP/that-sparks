@@ -29,7 +29,10 @@ const Sparkles: FC<SparklesProps> = ({ renderSparkles }) => {
 
   useRandomInterval(
     () => {
-      if (renderSparkles === false) return;
+      if (renderSparkles === false) {
+        setSparkles([]);
+        return;
+      }
 
       const now = Date.now();
 
