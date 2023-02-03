@@ -1,7 +1,7 @@
 // @ts-ignore
 import styles from './Sparkle.module.scss';
 import cn from 'classnames';
-import { FC } from 'react';
+import React, { FC } from 'react';
 import { SparkleProps } from './Sparkle.props';
 import Sparkles from '../Sparkles/Sparkles';
 

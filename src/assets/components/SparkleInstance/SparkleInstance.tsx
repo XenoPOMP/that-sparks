@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import React, { FC } from 'react';
 import { SparkleInstanceProps } from './SparkleInstance.props';
 // @ts-ignore
 import styles from './SparkleInstance.module.scss';

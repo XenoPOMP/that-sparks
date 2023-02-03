@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { Random } from 'random-js';
 import { SparkleType } from '../../types/SparkleType';
 import useRandomInterval from '../../hooks/useRandomInterval';
