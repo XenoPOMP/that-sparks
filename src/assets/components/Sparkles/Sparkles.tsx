@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
+import React, { FC, useState } from 'react';
 import { Random } from 'random-js';
 import { SparkleType } from '../../types/SparkleType';
 import useRandomInterval from '../../hooks/useRandomInterval';
 import SparkleInstance from '../SparkleInstance/SparkleInstance';
+import { SparklesProps } from './Sparkles.props';
 
-const Sparkles = () => {
+const Sparkles: FC<SparklesProps> = ({ renderSparkles }) => {
   // prettier-ignore
   const [sparkles, setSparkles] = useState <Array<SparkleType>>([]);
 
@@ -28,6 +29,8 @@ const Sparkles = () => {
 
   useRandomInterval(
     () => {
+      if (renderSparkles === false) return;
+
       const now = Date.now();
 
       // Create a new sparkle

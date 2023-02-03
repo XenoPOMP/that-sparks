@@ -5,10 +5,10 @@ import React, { FC } from 'react';
 import { SparkleProps } from './Sparkle.props';
 import Sparkles from '../Sparkles/Sparkles';
 
-const Sparkle: FC<SparkleProps> = ({ children }) => {
+const Sparkle: FC<SparkleProps> = ({ children, renderSparkles }) => {
   return (
     <div className={cn(styles.wrapper)}>
-      <Sparkles />
+      <Sparkles renderSparkles={renderSparkles} />
 
       {children}
     </div>
