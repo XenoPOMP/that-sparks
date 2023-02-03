@@ -17,7 +17,7 @@ const Sparkles: FC<SparklesProps> = ({ renderSparkles }) => {
       id: String(random.integer(10000, 99999)),
       createdAt: Date.now(),
       // Bright yellow color:
-      color,
+      color: renderSparkles ? color : 'transparent',
       size: random.integer(10, 20),
       style: {
         top: `${random.integer(0, 100)}%`,
@@ -29,11 +29,6 @@ const Sparkles: FC<SparklesProps> = ({ renderSparkles }) => {
 
   useRandomInterval(
     () => {
-      if (renderSparkles === false) {
-        setSparkles([]);
-        return;
-      }
-
       const now = Date.now();
 
       // Create a new sparkle
