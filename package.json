@@ -5,6 +5,10 @@
   "main": "index.ts",
   "license": "MIT",
   "private": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/XenoPOMP/that-sparks.git"
+  },
   "dependencies": {
     "classnames": "^2.3.2",
     "framer-motion": "^9.0.1",
